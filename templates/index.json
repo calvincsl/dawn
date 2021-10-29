@@ -65,7 +65,7 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button",
+            "button_label": "Text here",
             "button_link": ""
           }
         }
