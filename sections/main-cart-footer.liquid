@@ -6,6 +6,11 @@
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
+      <p class="cart-attribute__field">
+  <label for="delivery-date">Delivery date</label>
+  <input id="delivery-date" type="text" name="attributes[Delivery date]" value="{{ cart.attributes["Delivery date"] }}">
+</p>
+      
       {%- if section.settings.show_cart_note -%}
         <cart-note class="cart__note field">
           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
