@@ -11,6 +11,11 @@
   <input id="delivery-date" type="text" name="attributes[Delivery date]" value="{{ cart.attributes["Delivery date"] }}">
 </p>
       
+          <p class="cart-attribute__field">
+  <label for="delivery-time">Delivery time</label>
+  <input id="delivery-time" type="text" name="attributes[Delivery time]" value="{{ cart.attributes["Delivery time"] }}">
+</p>
+      
       {%- if section.settings.show_cart_note -%}
         <cart-note class="cart__note field">
           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
